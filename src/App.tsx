@@ -131,7 +131,7 @@ export default function App() {
                   {Object.entries(TOPIC_LABELS).map(([key, label], idx) => (
                     <div key={key} className={`p-6 rounded-3xl border border-border-theme shadow-sm flex flex-col items-center gap-3 ${
                       idx === 0 ? 'bg-topic-1' : idx === 1 ? 'bg-topic-2' : idx === 2 ? 'bg-topic-3' : 'bg-topic-4'
-                    }`}>
+                    }`}> 
                       <BookOpen className="w-6 h-6 text-primary" />
                       <span className="text-xs font-bold text-text-main uppercase tracking-wider">{label}</span>
                     </div>
@@ -140,7 +140,7 @@ export default function App() {
 
                 <button
                   onClick={startQuiz}
-                  className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-white transition-all duration-200 bg-text-main rounded-2xl focus:outline-none hover:bg-slate-800 shadow-xl"
+                  className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-white transition-all duration-200 bg-text-main rounded-2xl focus:outline-none hover:bg-slate-700"
                 >
                   Iniciar Desafio
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
